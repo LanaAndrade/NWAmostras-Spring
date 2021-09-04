@@ -14,6 +14,18 @@ import br.com.etechoracio.NWAmostras.enums.TemaPesquisadorEnum;
 import lombok.Getter;
 import lombok.Setter;
 
+/*
+ create table Pesquisador(
+        	id_pesq serial constraint id_pesq_pk primary key,
+        	senha_pesq varchar(256),
+        	email_pesq varchar(150) unique,
+        	nome_pesq varchar(150),
+        	cpf_pesq char(14),
+        	cargo int,
+        	tema_claro_escuro int
+)
+*/
+
 @Getter
 @Setter
 @Entity

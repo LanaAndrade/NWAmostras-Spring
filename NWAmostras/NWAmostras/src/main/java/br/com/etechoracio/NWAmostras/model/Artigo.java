@@ -11,13 +11,17 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.sql.Date;
+import java.time.LocalDateTime;
 
 /*
 id_artigo serial constraint id_artigo_pk primary key,
 dt_artigo date,
 titulo_artigo varchar(150),
 conteudo_artigo blob,
-resumo_artigo text
+palavras_chave_artigo varchar(250),
+resumo_artigo text,
+inativacao_artigo datetime,
+abstract_artigo text
 */
 
 @Getter
@@ -39,5 +43,16 @@ public class Artigo {
 	
 	@Column(name = "resumo_artigo")
 	private String resumo_artigo;
+	
+	@Column(name = "palavras_chave_artigo")
+	private String palavras_chave_artigo;
+	
+	@Column(name = "abstract_artigo")
+	private String abstract_artigo;
+	
+	@Column(name = "inativacao_artigo")
+	private LocalDateTime inativacao_artigo;
+	
+	//ver como armazenar blob
 }
 
