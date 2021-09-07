@@ -6,4 +6,5 @@ import br.com.etechoracio.NWAmostras.model.Amostra;
 
 public interface AmostraDAO extends JpaRepository<Amostra, Integer>{
 
+
 }
