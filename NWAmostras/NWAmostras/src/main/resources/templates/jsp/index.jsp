@@ -1,43 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
     <head>
         <title>NW Amostras</title>
-        <link rel="icon" type="img/png" href="./img/logoNwAmostras.png" />
+        <link rel="icon" type="img/png" href="../img/logoNwAmostras.png" />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
-        <script type="text/javascript" src="js/nwAmostrasScript.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+        <script type="text/javascript" src="../js/nwAmostrasScript.js" defer></script>
 
-        <script type="text/javascript" src="js/menuResponsivo.js" defer></script>
+        <script type="text/javascript" src="../js/menuResponsivo.js" defer></script>
     </head>
     <body>
         <!--Começo do menu-->
-        <header>
-            <nav>
-
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
-                    <i class="fas fa-bars"></i>
-                </label>
-
-                <button class="logo" onclick="location.href='index.html'">
-                    <img src="./img/logoNwAmostrasClaro.png" class="imgLogo" id="imgLogoClaro" alt="Logo da NW Amostras">
-                    <img src="./img/logoNwAmostrasEscuro.png" class="imgLogo" id="imgLogoEscuro" alt="Logo da NW Amostras">
-                </button>
-
-                <ul>
-                    <li><button class="buttonMenu" onclick="location.href='#idConhecaNossasFuncionalidades'">Funcionalidades</button></li>
-                    <li><button class="buttonMenu" onclick="location.href='artigos.html'">Artigos</button></li>
-                    <li><button class="buttonMenu" onclick="location.href='#contato'">Contato</button></li>
-                    <li><button class="buttonMenu" onclick="location.href='login.html'">Login</button></li>
-                    <li><button class="buttonMenu" id="btnModoClaroEscuro">
-                        <img src="./img/luaModoEscuro.png" class="imgBtnMenuTemaEscuroClaro" id="imgBtnMenuTemaEscuroLua" alt="Troca de temas">
-                        <img src="./img/solModoClaro.png" class="imgBtnMenuTemaEscuroClaro" id="imgBtnMenuTemaEscuroSol" alt="Troca de temas">
-                    </button></li>
-                </ul>
-            </nav>
-        </header>
+        <%@ include file="../includes/menu.jsp" %>
 
         <!--Inicio do Carrossel-->
             <figure id="carrossel">
@@ -75,53 +53,53 @@
             <div class="decoracaoTitulos"></div>
             <div class="divTxtNwAmostras">
             <Label class="txtNwAmostras">
-                O sistema NW Amostras auxilia instituições científicas na organização e monitoramento de dados, apoiando os técnicos biomédicos em seus laboratórios tornando sua pesquisa mais simples de ser efetuada.
+                O sistema NW Amostras auxilia institui��es cient�ficas na organiza��o e monitoramento de dados, apoiando os t�cnicos biom�dicos em seus laborat�rios tornando sua pesquisa mais simples de ser efetuada.
                 <br>
-                O programa traz isso de uma forma moderna, prática, intuitiva e de fácil acesso para que os pesquisadores de todas as idades possam utilizar sem grandes dificuldades. 
+                O programa traz isso de uma forma moderna, pr�tica, intuitiva e de f�cil acesso para que os pesquisadores de todas as idades possam utilizar sem grandes dificuldades. 
             </Label>
             </div>
         </div>
 
         <!--Inicio das Funcionalidades-->
         <div class="conhecaNossasFuncionalidades" id="idConhecaNossasFuncionalidades">
-            <label class="tituloNwAmostras">CONHEÇA NOSSAS FUNCIONALIDADES</label><br>
+            <label class="tituloNwAmostras">CONHE�A NOSSAS FUNCIONALIDADES</label><br>
             <div class="decoracaoTitulos"></div>
 
             <div class="containerImagemTxts">
                 <div class="imgFuncionalidades">
-                    <img src="./img/imgCriarProjetos.png" alt="">
+                    <img src="../img/imgCriarProjetos.png" alt="">
                 </div>
 
                 <div class="txtFuncionalidades">
                     <div class="containerTituloTxtFuncionalidades">
                         <div class="divTitulosFuncionalidades"><label class="tituloFuncionalidadesIndex palavrasAzul">CRIA PROJETOS</label></div><br>
-                        <label class="txtFuncionalidadesIndex">A criação dos projetos facilita a dncfwiuhfr8iw jnwf8cjre9ifjcw uwhf8jf9ewjfienf dushncdfuesheisn shd9e8jf98redhif.​​</label>
+                        <label class="txtFuncionalidadesIndex">A cria��o dos projetos facilita a dncfwiuhfr8iw jnwf8cjre9ifjcw uwhf8jf9ewjfienf dushncdfuesheisn shd9e8jf98redhif.​​</label>
                     </div>
                 </div>
 
                 <div class="imgFuncionalidades mudancaPosicaoImgUmIndex">
-                    <img src="./img/imgCriarMapaAmostraIndex.png" alt="">
+                    <img src="../img/imgCriarMapaAmostraIndex.png" alt="">
                 </div>
 
                 <div class="txtFuncionalidades">
                     <div class="containerTituloTxtFuncionalidades">
                         <div class="divTitulosFuncionalidades"><label class="tituloFuncionalidadesIndex palavrasAzul">CRIA MAPA DE AMOSTRAS</label></div><br>
-                        <label class="txtFuncionalidadesIndex">A criação dos mapas de amostras facilita a dncfwiuhfr8iw jnwf8cjre9ifjcw uwhf8jf9ewjfienf dushncdfuesheisn shd9e8jf98redhif.​​​​</label>
+                        <label class="txtFuncionalidadesIndex">A cria��o dos mapas de amostras facilita a dncfwiuhfr8iw jnwf8cjre9ifjcw uwhf8jf9ewjfienf dushncdfuesheisn shd9e8jf98redhif.​​​​</label>
                     </div>
                 </div>
 
                 <div class="imgFuncionalidades mudancaPosicaoImgDoisIndex">
-                    <img src="./img/imgCriarMapaAmostraIndex.png" alt="">
+                    <img src="../img/imgCriarMapaAmostraIndex.png" alt="">
                 </div>
 
                 <div class="imgFuncionalidades">
-                    <img src="./img/imgCriarArtigosIndex.png" alt="">
+                    <img src="../img/imgCriarArtigosIndex.png" alt="">
                 </div>
 
                 <div class="txtFuncionalidades">
                     <div class="containerTituloTxtFuncionalidades">
                         <div class="divTitulosFuncionalidades"><label class="tituloFuncionalidadesIndex palavrasAzul">CRIA ARTIGOS</label></div><br>
-                        <label class="txtFuncionalidadesIndex">A criação dos artigos facilita a dncfwiuhfr8iw jnwf8cjre9ifjcw uwhf8jf9ewjfienf dushncdfuesheisn shd9e8jf98redhif.​​​​​​​​</label>
+                        <label class="txtFuncionalidadesIndex">A cria��o dos artigos facilita a dncfwiuhfr8iw jnwf8cjre9ifjcw uwhf8jf9ewjfienf dushncdfuesheisn shd9e8jf98redhif.​​​​​​​​</label>
                     </div>
                 </div>
             </div>
@@ -135,23 +113,23 @@
 
             <div class="containerPesquisaFiltro">
                 <button class="buttonPesquisarArtigo" onclick="location.href='#'">
-                    <img src="./img/lupa.png" class="imgLupa" alt="">
+                    <img src="../img/lupa.png" class="imgLupa" alt="">
                 </button>
                 
                 <input type="text" class="inputBuscarArtigoIndex" placeholder="Buscar Artigos"/>
 
                 <button class="buttonFiltrarArtigo" onclick="location.href='#'">
-                    <img src="./img/filtro.png" class="imgFiltro" alt="">
+                    <img src="../img/filtro.png" class="imgFiltro" alt="">
                 </button>
             </div>
 
             <div class="containerPrincipaisArtigosIndex">
                 <div class="principaisArtigosIndex">
                     <div class="containerImgInfoArtigo">
-                        <img src="./img/imgExemploArtigo.png" class="imgArtigoIndex" alt="">
+                        <img src="../img/imgExemploArtigo.png" class="imgArtigoIndex" alt="">
                         <label class="palavrasAzul fonteDezoitoPx lblArtigosIndex">Nome do Projeto exemplo em modelo super mega extra grande...</label><br>
                         <label class="palavrasAzul fonteDezoitoPx lblArtigosIndex">Autor: </label><label class="palavrasPreto lblArtigosIndex">Exemplo 1, Exemplo 2, Exemplo 3</label><br>
-                        <label class="palavrasAzul fonteDezoitoPx lblArtigosIndex">Data de publicação: </label><label class="palavrasPreto lblArtigosIndex">00/00/0000</label><br>
+                        <label class="palavrasAzul fonteDezoitoPx lblArtigosIndex">Data de publica��o: </label><label class="palavrasPreto lblArtigosIndex">00/00/0000</label><br>
                         <label class="palavrasAzul fonteDezoitoPx lblArtigosIndex">Palavras-chaves: </label><label class="palavrasPreto lblArtigosIndex">exemplo a, exemplo b, exemplo c,  exemplo d</label>
                     </div>
                     <div class="containerResumoArtigoIndex">
@@ -160,10 +138,10 @@
                 </div>
                 <div class="principaisArtigosIndex">
                     <div class="containerImgInfoArtigo">
-                        <img src="./img/imgExemploArtigo.png" class="imgArtigoIndex" alt="">
+                        <img src="../img/imgExemploArtigo.png" class="imgArtigoIndex" alt="">
                         <label class="palavrasAzul fonteDezoitoPx lblArtigosIndex">Nome do Projeto exemplo em modelo super mega extra grande...</label><br>
                         <label class="palavrasAzul fonteDezoitoPx lblArtigosIndex">Autor: </label><label class="palavrasPreto lblArtigosIndex">Exemplo 1, Exemplo 2, Exemplo 3</label><br>
-                        <label class="palavrasAzul fonteDezoitoPx lblArtigosIndex">Data de publicação: </label><label class="palavrasPreto lblArtigosIndex">00/00/0000</label><br>
+                        <label class="palavrasAzul fonteDezoitoPx lblArtigosIndex">Data de publica��o: </label><label class="palavrasPreto lblArtigosIndex">00/00/0000</label><br>
                         <label class="palavrasAzul fonteDezoitoPx lblArtigosIndex">Palavras-chaves: </label><label class="palavrasPreto lblArtigosIndex">exemplo a, exemplo b, exemplo c,  exemplo d</label>
                     </div>
                     <div class="containerResumoArtigoIndex">
@@ -174,13 +152,7 @@
         </div>
         <!--Fim Artigos-->
 
-        <footer id="contato">
-            <label class="tituloContato">CONTATOS</label><br>
-            <label class="palavrasAzul fonteDezoitoPx">Instagram: </label><label class="palavrasPreto">@nuwacompany​</label><br>
-            <label class="palavrasAzul fonteDezoitoPx">Celular: </label><label class="palavrasPreto">(11) 943118130</label><br>
-            <label class="palavrasAzul fonteDezoitoPx">E-mail: </label><label class="palavrasPreto">companynuwa@gmail.com</label><br>
-            <label class="palavrasAzul fonteDezoitoPx">Site da empresa: ​</label><a class="palavrasPreto" href="https://nuwa-three.vercel.app/" >https://nuwa-three.vercel.app/</a><br>
-        </footer>        
+		<%@ include file="../includes/rodape.jsp" %>
 
     </body>
 </html>
