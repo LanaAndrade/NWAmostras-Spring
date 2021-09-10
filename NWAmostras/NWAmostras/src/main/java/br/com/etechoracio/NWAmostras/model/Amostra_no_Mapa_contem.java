@@ -2,8 +2,6 @@ package br.com.etechoracio.NWAmostras.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -11,13 +9,11 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-import br.com.etechoracio.NWAmostras.enums.Privado_publicoProjeto;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.sql.Date;
 import java.sql.Time;
-import java.time.LocalDateTime;
 
 /*
 create table Amostra_no_Mapa_contem(
