@@ -9,7 +9,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import br.com.etechoracio.NWAmostras.enums.CargoPesquisadorEnum;
 import br.com.etechoracio.NWAmostras.enums.Privado_publicoProjeto;
 import lombok.Getter;
 import lombok.Setter;
