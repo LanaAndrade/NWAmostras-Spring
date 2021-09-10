@@ -32,7 +32,7 @@ create table Mapa_de_amostras(
 public class Mapa_de_amostras {
 
 	@Id
-	@Column(name = "id_id_mapa_amostra")
+	@Column(name = "id_mapa_amostra")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id_mapa_amostra;
 	
@@ -49,10 +49,10 @@ public class Mapa_de_amostras {
 	private String caixa_mapa_amostra;	
 	
 	@Column(name = "n_coluna_mapa_amostra")
-	private String n_coluna_mapa_amostra;	
+	private Integer n_coluna_mapa_amostra;	
 	
 	@Column(name = "n_linha_mapa_amostra")
-	private String n_linha_mapa_amostra;
+	private Integer n_linha_mapa_amostra;
 	
 	@ManyToOne
 	@JoinColumn(name = "id_pesq")
