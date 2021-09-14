@@ -1,5 +1,7 @@
 package br.com.etechoracio.NWAmostras.model;
 
+import java.time.LocalDateTime;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -22,7 +24,8 @@ import lombok.Setter;
         	nome_pesq varchar(150),
         	cpf_pesq char(14),
         	cargo int,
-        	tema_claro_escuro int
+        	tema_claro_escuro int,
+        	data_inativacao_pesquisador datetime
 )
 */
 
@@ -56,5 +59,13 @@ public class Pesquisador {
 	@Column(name = "tema_claro_escuro")
 	@Enumerated(EnumType.ORDINAL)
 	private TemaPesquisadorEnum tema_claro_escuro;
+	
+	@Column(name = "data_inativacao_pesq")
+	private LocalDateTime data_inativacao_pesq;
+
+	public void setData_inativacao_pesq(LocalDateTime now) {
+		// TODO Auto-generated method stub
+		
+	}
 }
 
