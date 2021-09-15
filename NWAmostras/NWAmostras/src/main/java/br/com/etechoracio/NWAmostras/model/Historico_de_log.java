@@ -23,7 +23,8 @@ create table Historico_de_log(
         	logger_histo_log varchar(255),
         	exception_histo_log varchar(2000),
         	thread_histo_log varchar(255),
-        	foreign key (id_lab) references Laboratorio (id_lab)
+        	foreign key (id_lab) references Laboratorio (id_lab),
+        	data_inativacao_hist_log datetime
 ) 
  */
 
@@ -59,4 +60,12 @@ public class Historico_de_log {
 	@ManyToOne
 	@JoinColumn(name = "id_lab")
 	private Laboratorio id_lab;
+	
+	@Column(name = "data_inativacao_hist_log")
+	private LocalDateTime data_inativacao_hist_log;
+
+	public void setData_inativacao_hist_log(LocalDateTime now) {
+		// TODO Auto-generated method stub
+		
+	}
 }

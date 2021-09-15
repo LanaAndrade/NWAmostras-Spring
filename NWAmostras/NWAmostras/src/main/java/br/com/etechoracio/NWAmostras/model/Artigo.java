@@ -52,6 +52,11 @@ public class Artigo {
 	
 	@Column(name = "inativacao_artigo")
 	private LocalDateTime inativacao_artigo;
+
+	public void setInativacao_artigo(LocalDateTime now) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	//ver como armazenar blob
 }

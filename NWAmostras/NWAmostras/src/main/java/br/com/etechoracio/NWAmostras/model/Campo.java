@@ -12,9 +12,6 @@ import javax.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.sql.Date;
-import java.sql.Time;
-
 /*
 create table Campo(
         	id_campo serial constraint id_campo_pk primary key,
