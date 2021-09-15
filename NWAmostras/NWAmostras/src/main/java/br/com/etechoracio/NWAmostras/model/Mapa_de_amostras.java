@@ -1,5 +1,7 @@
 package br.com.etechoracio.NWAmostras.model;
 
+import java.time.LocalDateTime;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -21,7 +23,8 @@ create table Mapa_de_amostras(
         	caixa_mapa_amostra varchar(50),
         	n_coluna_mapa_amostra numeric(30),
         	n_linha_mapa_amostra numeric(30),
-        	foreign key (id_pesq) references Pesquisador (id_pesq)
+        	foreign key (id_pesq) references Pesquisador (id_pesq),
+        	data_inativacao_mapa_amostra datetime
 )
  */
 
@@ -57,4 +60,9 @@ public class Mapa_de_amostras {
 	@ManyToOne
 	@JoinColumn(name = "id_pesq")
 	private Pesquisador id_pesq;
+
+	public void setData_inativacao_mapa_amostra(LocalDateTime now) {
+		// TODO Auto-generated method stub
+		
+	}
 }
