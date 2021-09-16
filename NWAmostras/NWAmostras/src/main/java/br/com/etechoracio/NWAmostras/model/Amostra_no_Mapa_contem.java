@@ -14,6 +14,7 @@ import lombok.Setter;
 
 import java.sql.Date;
 import java.sql.Time;
+import java.time.LocalDateTime;
 
 /*
 create table Amostra_no_Mapa_contem(
@@ -26,7 +27,8 @@ create table Amostra_no_Mapa_contem(
         	volume_amostra decimal (8,2),
         	hora_coleta_amostra time,
         	foreign key (id_amostra) references Amostra (id_amostra),
-        	foreign key (id_mapa_amostra) references Mapa_de_amostras (id_mapa_amostra)
+        	foreign key (id_mapa_amostra) references Mapa_de_amostras (id_mapa_amostra),
+        	data_inativacao_amostra_no_mapa_contem datetime
 )
  */
 
@@ -69,4 +71,11 @@ public class Amostra_no_Mapa_contem {
 	@ManyToOne
 	@JoinColumn(name = "id_mapa_amostra")
 	private Mapa_de_amostras id_mapa_amostra;
+
+	@Column(name = "data_inativacao_amostra_no_mapa_contem")
+	private LocalDateTime data_inativacao_amostra_no_mapa_contem;
+	
+	public void setData_inativacao_amostra_no_mapa_contem(LocalDateTime now) {
+		
+	}
 }
