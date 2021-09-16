@@ -57,7 +57,6 @@ public class Amostra {
 	private LocalDateTime data_inativacao_amostra;
 
 	public void setData_inativacao_amostra(LocalDateTime now) {
-		// TODO Auto-generated method stub
 		
 	}
 	
