@@ -1,5 +1,7 @@
 package br.com.etechoracio.NWAmostras.model;
 
+import java.time.LocalDateTime;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -18,7 +20,8 @@ create table Campo(
         	nome_campo varchar(256),
         	tipo_dados varchar(256),
 			foreign key (id_pesq) references Pesquisador (id_pesq),
-			foreign key (id_projeto) references Projeto (id_projeto)
+			foreign key (id_projeto) references Projeto (id_projeto),
+			data_inativacao_campo datetime
 )
  */
 
@@ -46,4 +49,11 @@ public class Campo {
 	@ManyToOne
 	@JoinColumn(name = "id_projeto")
 	private Projeto id_projeto;
+
+	@Column(name = "data_inativacao_campo")
+	private String data_inativacao_campo;
+	
+	public void setData_inativacao_campo(LocalDateTime now) {
+		
+	}
 }
