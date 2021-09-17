@@ -64,7 +64,7 @@ public class AmostraController {
 
     
     @DeleteMapping("/{id}")
-    public ResponseEntity<Laboratorio> deletar(@PathVariable Integer id) {
+    public ResponseEntity<Amostra> deletar(@PathVariable Integer id) {
         Optional<Amostra> resultado = amostraDAO.findById(id);    
         if(resultado.isEmpty())
         {
