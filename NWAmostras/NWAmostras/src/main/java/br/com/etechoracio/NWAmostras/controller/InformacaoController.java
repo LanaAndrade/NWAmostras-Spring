@@ -64,7 +64,7 @@ public class InformacaoController {
 
 	    
 	    @DeleteMapping("/{id}")
-	    public ResponseEntity<Laboratorio> deletar(@PathVariable Integer id) {
+	    public ResponseEntity<Informacao> deletar(@PathVariable Integer id) {
 	        Optional<Informacao> resultado = informacaoDAO.findById(id);    
 	        if(resultado.isEmpty())
 	        {

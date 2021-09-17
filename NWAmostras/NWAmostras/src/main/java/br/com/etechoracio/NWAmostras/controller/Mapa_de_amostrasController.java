@@ -15,9 +15,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.etechoracio.NWAmostras.dao.AmostraDAO;
 import br.com.etechoracio.NWAmostras.dao.Mapa_de_amostrasDAO;
-import br.com.etechoracio.NWAmostras.model.Amostra;
 import br.com.etechoracio.NWAmostras.model.Laboratorio;
 import br.com.etechoracio.NWAmostras.model.Mapa_de_amostras;
 
@@ -67,7 +65,7 @@ public class Mapa_de_amostrasController {
 
     
     @DeleteMapping("/{id}")
-    public ResponseEntity<Laboratorio> deletar(@PathVariable Integer id) {
+    public ResponseEntity<Mapa_de_amostras> deletar(@PathVariable Integer id) {
         Optional<Mapa_de_amostras> resultado = mapa_de_amostrasDAO.findById(id);    
         if(resultado.isEmpty())
         {

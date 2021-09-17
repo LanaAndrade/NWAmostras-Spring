@@ -15,11 +15,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import br.com.etechoracio.NWAmostras.dao.AmostraDAO;
 import br.com.etechoracio.NWAmostras.dao.Historico_de_logDAO;
-import br.com.etechoracio.NWAmostras.model.Amostra;
 import br.com.etechoracio.NWAmostras.model.Historico_de_log;
-import br.com.etechoracio.NWAmostras.model.Laboratorio;
 
 @RestController
 @RequestMapping("historicos")

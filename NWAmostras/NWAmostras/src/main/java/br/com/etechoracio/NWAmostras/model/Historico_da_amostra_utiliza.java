@@ -13,6 +13,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.sql.Date;
+import java.time.LocalDateTime;
 
 /*
 create table Historico_da_amostra_utiliza(
@@ -20,7 +21,8 @@ create table Historico_da_amostra_utiliza(
         	quant_hist_amostra decimal(8,2),
         	dt_hist_amostra date,
         	foreign key (id_amostra) references Amostra (id_amostra),
-			foreign key (id_pesq) references Pesquisador (id_pesq)
+			foreign key (id_pesq) references Pesquisador (id_pesq),
+			data_inativacao_hist_amostra datetime
 )
  */
 
@@ -48,4 +50,11 @@ public class Historico_da_amostra_utiliza {
 	@ManyToOne
 	@JoinColumn(name = "id_pesq")
 	private Pesquisador id_pesq;
+
+	@Column(name = "data_inativacao_hist_amostra")
+	private LocalDateTime data_inativacao_hist_amostra;
+	
+	public void setData_inativacao_hist_amostra(LocalDateTime now) {
+		
+	}
 }

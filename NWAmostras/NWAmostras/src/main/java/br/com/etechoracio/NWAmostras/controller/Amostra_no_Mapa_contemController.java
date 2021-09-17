@@ -64,7 +64,7 @@ public class Amostra_no_Mapa_contemController {
 
     
     @DeleteMapping("/{id}")
-    public ResponseEntity<Laboratorio> deletar(@PathVariable Integer id) {
+    public ResponseEntity<Amostra_no_Mapa_contem> deletar(@PathVariable Integer id) {
         Optional<Amostra_no_Mapa_contem> resultado = amostra_no_mapa_contemDAO.findById(id);    
         if(resultado.isEmpty())
         {

@@ -66,7 +66,7 @@ public class CampoController {
 
     
     @DeleteMapping("/{id}")
-    public ResponseEntity<Laboratorio> deletar(@PathVariable Integer id) {
+    public ResponseEntity<Campo> deletar(@PathVariable Integer id) {
         Optional<Campo> resultado = campoDAO.findById(id);    
         if(resultado.isEmpty())
         {

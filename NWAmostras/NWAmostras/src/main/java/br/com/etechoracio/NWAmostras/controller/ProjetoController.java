@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.etechoracio.NWAmostras.dao.ProjetoDAO;
-import br.com.etechoracio.NWAmostras.model.Laboratorio;
 import br.com.etechoracio.NWAmostras.model.Projeto;
 
 @RestController
@@ -64,7 +63,7 @@ public class ProjetoController {
 
 	    
 	    @DeleteMapping("/{id}")
-	    public ResponseEntity<Laboratorio> deletar(@PathVariable Integer id) {
+	    public ResponseEntity<Projeto> deletar(@PathVariable Integer id) {
 	        Optional<Projeto> resultado = projetoDAO.findById(id);    
 	        if(resultado.isEmpty())
 	        {
