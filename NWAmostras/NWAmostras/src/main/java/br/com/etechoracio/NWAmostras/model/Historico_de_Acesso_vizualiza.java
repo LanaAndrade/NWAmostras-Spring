@@ -50,7 +50,4 @@ public class Historico_de_Acesso_vizualiza {
 	@Column(name = "data_inativacao_hist_acesso_vizualiza")
 	private LocalDateTime data_inativacao_hist_acesso_vizualiza;
 	
-	public void setData_inativacao_hist_acesso_vizualiza(LocalDateTime now) {
-		
-	}
 }

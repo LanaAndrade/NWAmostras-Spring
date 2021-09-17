@@ -48,10 +48,4 @@ public class Laboratorio {
 	
 	@Column(name = "data_inativacao_lab")
 	private LocalDateTime data_inativacao_lab;
-
-	public void setData_inativacao_lab(LocalDateTime now) {
-		// TODO Auto-generated method stub
-		
-	}
-	
 }

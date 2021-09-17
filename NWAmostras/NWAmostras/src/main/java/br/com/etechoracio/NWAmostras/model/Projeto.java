@@ -54,8 +54,5 @@ public class Projeto {
 	@Column(name = "inativacao_projeto")
 	private LocalDateTime inativacao_projeto;
 
-	public void setInativacao_projeto(LocalDateTime now) {
-		
-	}
-	
-	}
+
+}

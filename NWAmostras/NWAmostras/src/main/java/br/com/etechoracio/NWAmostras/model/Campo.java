@@ -11,6 +11,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import br.com.etechoracio.NWAmostras.enums.TipoDadosCampoEnum;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -40,7 +41,7 @@ public class Campo {
 	private String nome_campo;
 	
 	@Column(name = "tipo_dados")
-	private String tipo_dados;
+	private TipoDadosCampoEnum tipo_dados;
 	
 	@ManyToOne
 	@JoinColumn(name = "id_pesq")
@@ -53,7 +54,4 @@ public class Campo {
 	@Column(name = "data_inativacao_campo")
 	private String data_inativacao_campo;
 	
-	public void setData_inativacao_campo(LocalDateTime now) {
-		
-	}
 }

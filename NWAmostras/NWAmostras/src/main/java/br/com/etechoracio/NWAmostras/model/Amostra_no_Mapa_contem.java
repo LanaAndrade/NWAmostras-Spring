@@ -75,7 +75,4 @@ public class Amostra_no_Mapa_contem {
 	@Column(name = "data_inativacao_amostra_no_mapa_contem")
 	private LocalDateTime data_inativacao_amostra_no_mapa_contem;
 	
-	public void setData_inativacao_amostra_no_mapa_contem(LocalDateTime now) {
-		
-	}
 }

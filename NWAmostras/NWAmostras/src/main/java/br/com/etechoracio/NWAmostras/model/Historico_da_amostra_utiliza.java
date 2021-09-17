@@ -54,7 +54,4 @@ public class Historico_da_amostra_utiliza {
 	@Column(name = "data_inativacao_hist_amostra")
 	private LocalDateTime data_inativacao_hist_amostra;
 	
-	public void setData_inativacao_hist_amostra(LocalDateTime now) {
-		
-	}
 }

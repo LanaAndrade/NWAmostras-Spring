@@ -49,7 +49,4 @@ public class Informacao {
 	@Column(name = "data_inativacao_informacao")
 	private LocalDateTime data_inativacao_informacao;
 
-	public void setData_inativacao_informacao(LocalDateTime now) {
-		
-	}
 }

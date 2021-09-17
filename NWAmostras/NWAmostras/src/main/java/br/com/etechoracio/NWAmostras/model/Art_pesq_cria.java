@@ -36,8 +36,4 @@ public class Art_pesq_cria {
 	@Column(name = "data_inativacao_art_pesq_cria ")
 	private LocalDateTime data_inativacao_art_pesq_cria ;
 
-	public void setData_inativacao_art_pesq_cria(LocalDateTime now) {
-		// TODO Auto-generated method stub
-		
-	}
 }

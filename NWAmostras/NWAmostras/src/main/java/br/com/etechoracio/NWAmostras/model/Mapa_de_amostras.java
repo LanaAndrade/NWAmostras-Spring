@@ -61,8 +61,4 @@ public class Mapa_de_amostras {
 	@JoinColumn(name = "id_pesq")
 	private Pesquisador id_pesq;
 
-	public void setData_inativacao_mapa_amostra(LocalDateTime now) {
-		// TODO Auto-generated method stub
-		
-	}
 }

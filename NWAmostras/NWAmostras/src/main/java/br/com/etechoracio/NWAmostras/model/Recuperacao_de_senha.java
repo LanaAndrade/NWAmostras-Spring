@@ -39,8 +39,4 @@ public class Recuperacao_de_senha {
 	@Column(name = "data_inativacao_rec_senha")
 	private LocalDateTime data_inativacao_rec_senha;
 
-	public void setData_inativacao_rec_senha(LocalDateTime now) {
-		
-	}	
-
 }

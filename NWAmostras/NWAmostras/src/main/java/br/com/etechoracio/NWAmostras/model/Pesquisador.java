@@ -62,10 +62,5 @@ public class Pesquisador {
 	
 	@Column(name = "data_inativacao_pesq")
 	private LocalDateTime data_inativacao_pesq;
-
-	public void setData_inativacao_pesq(LocalDateTime now) {
-		// TODO Auto-generated method stub
-		
-	}
 }
 

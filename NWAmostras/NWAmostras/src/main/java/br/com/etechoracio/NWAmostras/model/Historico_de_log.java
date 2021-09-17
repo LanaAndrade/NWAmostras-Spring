@@ -63,9 +63,4 @@ public class Historico_de_log {
 	
 	@Column(name = "data_inativacao_hist_log")
 	private LocalDateTime data_inativacao_hist_log;
-
-	public void setData_inativacao_hist_log(LocalDateTime now) {
-		// TODO Auto-generated method stub
-		
-	}
 }
