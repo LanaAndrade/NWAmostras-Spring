@@ -13,13 +13,15 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.sql.Date;
+import java.time.LocalDateTime;
 
 /*
 create table Historico_de_Acesso_vizualiza(
         	id_hist_acesso serial constraint id_hist_acesso_pk primary key,
         	dt_hist_acesso date,
 			foreign key (id_projeto) references Projeto (id_projeto),
-			foreign key (id_pesq) references Pesquisador (id_pesq)
+			foreign key (id_pesq) references Pesquisador (id_pesq),
+			data_inativacao_hist_acesso_vizualiza datetime
 )
  */
 
@@ -44,4 +46,11 @@ public class Historico_de_Acesso_vizualiza {
 	@ManyToOne
 	@JoinColumn(name = "id_pesq")
 	private Pesquisador id_pesq;
+
+	@Column(name = "data_inativacao_hist_acesso_vizualiza")
+	private LocalDateTime data_inativacao_hist_acesso_vizualiza;
+	
+	public void setData_inativacao_hist_acesso_vizualiza(LocalDateTime now) {
+		
+	}
 }
