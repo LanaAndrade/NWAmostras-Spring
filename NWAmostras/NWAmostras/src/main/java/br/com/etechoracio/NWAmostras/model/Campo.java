@@ -4,6 +4,8 @@ import java.time.LocalDateTime;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -41,6 +43,7 @@ public class Campo {
 	private String nome_campo;
 	
 	@Column(name = "tipo_dados")
+	@Enumerated(EnumType.STRING)
 	private TipoDadosCampoEnum tipo_dados;
 	
 	@ManyToOne
